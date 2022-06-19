@@ -19,6 +19,24 @@
     <Filter Include="Fichiers d%27en-tête\Window">
       <UniqueIdentifier>{8b884b76-8de9-4d73-97ae-4b3c7515dbc9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Character">
+      <UniqueIdentifier>{09660470-b375-4e20-a3e5-58bc39670f6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Character">
+      <UniqueIdentifier>{7721b96f-fe3b-4c79-9d68-44abdf60887b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Character\Player">
+      <UniqueIdentifier>{ffba98fa-f3e4-4bdf-9756-a32dc91be093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Character\Player">
+      <UniqueIdentifier>{95630f49-1080-477c-9c73-6bc5cc373cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Character\Enemy">
+      <UniqueIdentifier>{2232398f-0573-4f0b-872b-691090c8f52a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Character\Enemy">
+      <UniqueIdentifier>{3baabb8f-eb68-456c-9131-1132811eecee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -27,10 +45,28 @@
     <ClCompile Include="MyWindow.cpp">
       <Filter>Fichiers sources\Window</Filter>
     </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Fichiers sources\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Fichiers sources\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Fichiers sources\Character\Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyWindow.h">
       <Filter>Fichiers d%27en-tête\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Fichiers d%27en-tête\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Fichiers d%27en-tête\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Fichiers d%27en-tête\Character\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

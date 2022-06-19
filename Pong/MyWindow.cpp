@@ -1,4 +1,6 @@
 #include "MyWindow.h"
+#include "Player.h"
+#include "Enemy.h"
 
 /* Global variables */
 Event event;
@@ -47,9 +49,17 @@ string MyWindow::setTitle(string title)
 	return this->title;
 }
 
+/* Customized Functions */
+
 void MyWindow::createWindow()
 {
-	if (MyWindow::getWidth() < 0 || MyWindow::getHeight())
+	Player player(0.f, (MyWindow::getHeight() / 2) - 100.f, 30.f, 200.f, 2, Color::White);
+	Enemy enemy(
+		MyWindow::getWidth() - 30.f, (MyWindow::getHeight() / 2) - 100.f,
+		30.f, 200.f, 2, Color::White
+	);
+
+	if (MyWindow::getWidth() < 0 || MyWindow::getHeight() < 0)
 	{
 		cerr << "Impossible de créer une fenêtre avec des valeurs négatives" << endl;
 		return;
@@ -64,6 +74,8 @@ void MyWindow::createWindow()
 				window.close();
 		}
 		window.clear();
+		window.draw(player.createCharacter());
+		window.draw(enemy.createCharacter());
 		window.display();
 	}
 }
